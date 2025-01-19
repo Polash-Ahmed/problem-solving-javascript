@@ -84,3 +84,30 @@ function fizzBuzz(number) {
   }
 }
 fizzBuzz(100)
+
+//  Array থেকে falsy value কিভাবে খুঁজে বের করে বাদ দিতে পারি ?
+
+const mixedAArr = [
+  "lws",
+  undefined,
+  "learn With Sumit",
+  false,
+  "",
+  "apple",
+  40,
+  "k",
+  true,
+  "Thanks all",
+  NaN,
+];
+// const trueArray = mixedAArr.filter(function(el){
+//   if(el){
+//     return true
+//   }
+//   else{
+//     return false;
+//   }
+// })
+
+const trueArray = mixedAArr.filter(Boolean);
+console.log(trueArray);

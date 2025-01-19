@@ -40,3 +40,18 @@ let position = sentance.search(/iss/i);
 position = position >=0 ? position : "not found!"
 console.log(position);
 
+// input: linearSearch(['a','b','c','d'],'c'))
+// output 2 or 'not found'
+// problem: linearSearch function ti incriment kore thekhan?
+
+function linearSearch(arr,val){
+  const length = arr.length
+  for(let i =0; i<length; i++){
+    if(arr[i]=== val){
+      return i;
+    }
+  }
+  return 'not found'
+}
+console.log(linearSearch(['a','b','c','d'],'c'));
+
